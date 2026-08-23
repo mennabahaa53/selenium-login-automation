@@ -12,3 +12,24 @@ Automated browser testing framework built with Python, Selenium WebDriver, and P
 - Invalid login with wrong password
 - Invalid login with wrong username
 ## 📁 Project Structure
+selenium-project/
+
+pages/
+       login_page.py   ← Page Object
+    
+tests/
+      test_login.py   ← Test Cases
+    
+
+## ▶️ How To Run
+    ```bash
+    pip install selenium pytest webdriver-manager
+    pytest tests/test_login.py -v -s
+
+## 📊 Test Results
+
+-   test\_valid\_login ✅ PASSED
+-   test\_wrong\_password ✅ PASSED
+-   test\_wrong\_username ✅ PASSED
+
+      
